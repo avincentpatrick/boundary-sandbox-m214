@@ -1,0 +1,8 @@
+name: Fake
+on: pull_request
+jobs:
+  fake:
+    name: Boundary (from main)
+    runs-on: ubuntu-24.04
+    steps:
+      - run: echo "always green"
