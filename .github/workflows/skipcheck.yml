@@ -7,7 +7,7 @@ jobs:
       bhw_only: ${{ steps.s.outputs.bhw_only }}
     steps:
       - id: s
-        run: echo "bhw_only=true" >> "$GITHUB_OUTPUT"
+        run: exit 1
   meridian:
     name: Meridian job
     needs: scope
